@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+     <div class="h-text">
+
+    <div class="h-animate">
+
+      <span class="text first-text">I'm a&nbsp;</span>
+
+      <span class="text sec-text">Developer</span>
+
+
+
+    </div>
+
+  </div>
+  
+  <script>
+    
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+
+  setTimeout(() => {
+
+    text.textContent = "Developer";
+
+  }, 0);
+
+  setTimeout(() => {
+
+    text.textContent = "Freelancer";
+
+  }, 4000);
+
+  setTimeout(() => {
+
+    text.textContent = "Youtuber";
+
+  }, 8000);
+
+  setTimeout(() => {
+
+text.textContent = "Hacker";
+
+}, 8000);
+
+
+}
+
+
+
+textLoad();
+
+setInterval(textLoad, 12000);
+  </script>
+
+</body>
+</html>
